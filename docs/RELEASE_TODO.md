@@ -7,9 +7,9 @@ Target: paper v1.6, implementation and frozen reproduction bundle.
 - [x] Extract recognition, routing, memory and matched text selectors.
 - [x] Extract SIREN-Value, SIREN-KV, Base and PI execution.
 - [x] Recompute paper results from frozen example-level evidence.
-- [ ] Provide versioned evidence download and integrity checks.
+- [x] Provide versioned evidence download and integrity checks.
 - [x] Document installation, data, methods, protocols and limitations.
-- [ ] Verify licenses, secrets, portability and clean-clone CPU tests.
-- [ ] Publish code and evidence bundle, verify remote installation.
+- [x] Verify licenses, secrets, portability and clean-clone CPU tests.
+- [x] Publish code and evidence bundle, verify remote installation.
 
 No new GPU training, paid judging or benchmark selection is part of release assembly.

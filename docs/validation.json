@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-08",
+  "release": "v0.1.0",
+  "source_commit_tested": "9c643d1ca4e2f349d794ced22ee1ee1c83fb360a",
+  "local_cpu_suite": {
+    "passed": 49,
+    "failed": 0,
+    "optional_tiny_model_tests_included": true
+  },
+  "clean_github_checkout": {
+    "python": "3.13",
+    "system_site_packages": false,
+    "pretrained_models_installed": false,
+    "passed": 38,
+    "skipped": 2,
+    "failed": 0,
+    "skip_reason": "optional torch/transformers mechanics tests absent from lightweight install",
+    "offline_example": true,
+    "artifact_unpack_and_checksums": true,
+    "paper_result_reconstruction": true
+  },
+  "matching_historical_routes": {
+    "methods": 4,
+    "per_method": 2390,
+    "total": 9560,
+    "selection_and_reason_mismatches": 0,
+    "minilm_refitted_from_released_features": true
+  },
+  "tokenization_identity": {
+    "prefix_frames": 82,
+    "training_records": 491,
+    "validation_records": 164,
+    "mismatches": 0
+  },
+  "artifact_manifest_entries_verified": 90,
+  "primary_paper_counts_reproduced": true,
+  "full_8b_gpu_campaign_rerun": false,
+  "new_paid_api_calls": 0,
+  "secret_scan": {
+    "text_files": 145,
+    "credential_matches": 0
+  },
+  "code_license": "MIT",
+  "data_terms": "CC-BY-4.0 for author-held rights; separate third-party notices",
+  "limitations": [
+    "Fresh GPU generation and API judgments can differ from historical records.",
+    "Optional final trained memory downloads are not included in this release.",
+    "Historical appendix campaign records are exported; not every historical training campaign is reimplemented or rerun."
+  ]
+}
