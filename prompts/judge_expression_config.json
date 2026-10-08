@@ -1,0 +1,22 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "calibration_attempt_cap": 10,
+  "concurrency": 16,
+  "credential_env": "DEEPSEEK_API_KEY",
+  "max_attempts_per_pass": 3,
+  "max_tokens": 6144,
+  "model": "deepseek-flash",
+  "model_family": "DeepSeek-V4.1-Flash",
+  "passes": 2,
+  "response_format": {
+    "type": "json_object"
+  },
+  "runtime_location": "Mac",
+  "seed": 42,
+  "temperature": 0,
+  "thinking": {
+    "type": "disabled"
+  },
+  "third_on": "preference conflict, applicability conflict, or 0-vs-2 quality score",
+  "timeout_seconds": 180
+}

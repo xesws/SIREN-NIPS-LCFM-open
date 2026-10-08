@@ -1,0 +1,27 @@
+{
+  "cross_label_duplicates": [
+    {
+      "ids": [
+        "transformed:r051-p03",
+        "transformed:r051-h02"
+      ],
+      "view": "transformed"
+    }
+  ],
+  "eval_rows": 2390,
+  "exact_unique_texts": 5157,
+  "excluded_rule": "r033",
+  "fit_rows": 3072,
+  "normalized_fit_eval_overlap": 0,
+  "panels": {
+    "background/background": 50,
+    "fresh/hard_negative": 288,
+    "fresh/positive": 576,
+    "original/hard_negative": 216,
+    "original/positive": 432,
+    "seed/hard_negative": 90,
+    "seed/positive": 90,
+    "transformed/hard_negative": 216,
+    "transformed/positive": 432
+  }
+}

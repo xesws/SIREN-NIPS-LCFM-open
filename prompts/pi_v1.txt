@@ -1,0 +1,7 @@
+Use the selected behavioral guidance to continue the current dialogue. Adapt it to this situation. Examples, when provided, illustrate the guidance.
+
+Condition: {condition}
+Guidance: {guidance}
+
+Current dialogue:
+{stream}

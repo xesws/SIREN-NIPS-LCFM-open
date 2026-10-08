@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code or benchmark, please cite the accompanying SIREN paper."
+title: "SIREN: Evidence-Coupled Rule Editing for Selective Memory Use"
+type: software
+version: 0.1.0
+date-released: 2026-10-08
+authors:
+  - family-names: Qian
+    given-names: Tangyi
+  - family-names: Chang
+    given-names: Yuan
+repository-code: "https://github.com/xesws/SIREN-NIPS-LCFM-open"
+url: "https://openreview.net/forum?id=RmMFU7QAnn"

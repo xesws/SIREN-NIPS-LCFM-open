@@ -1,0 +1,12 @@
+{
+  "schema": "siren-public-download-v1",
+  "tag": "v0.1.0",
+  "filename": "siren-paper-evidence-v0.1.0.tar.gz",
+  "url": "https://github.com/xesws/SIREN-NIPS-LCFM-open/releases/download/v0.1.0/siren-paper-evidence-v0.1.0.tar.gz",
+  "bytes": 96381611,
+  "sha256": "f15312bed3c212dd6a125efd529a52d4e1aea21d19e2a2d6000d0584c425c177",
+  "payload_manifest_sha256": "0f40714ccf9e0a756a6b958969052bef553e1f3647ba42143e3fb349f1020974",
+  "files": 70,
+  "contains_model_weights": false,
+  "contains_teacher_probability_cache": false
+}

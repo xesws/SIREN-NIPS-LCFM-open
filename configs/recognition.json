@@ -1,0 +1,22 @@
+{
+  "schema": "siren-recognition-recipe-v1",
+  "seed": 42,
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "layer": 12,
+  "pooling": "last_60pct_mean",
+  "pooling_span": "published_interaction_offsets",
+  "historical_feature_precision": "bfloat16",
+  "execution_replay_feature_precision": "float32",
+  "key": {
+    "low_evidence_initial_weight": 4.0,
+    "discriminant_minimum_evidence": 4,
+    "covariance": "ledoit_wolf_on_concatenated_fit_banks",
+    "ridge": 0.000001,
+    "normalization_epsilon": 0.00000001
+  },
+  "scoring": {"kind": "single_key_hopfield", "alpha": 0.1, "steps": 1},
+  "calibration": {"positive_quantile": 0.1, "negative_quantile": 0.9, "population_std_floor": 0.00000001},
+  "routing": {"minimum_evidence": 4, "gap_second": 0.000001, "gap_null": 0.000001},
+  "note": "Known-collection replay uses all other rules' fit positives as contrastive negatives. Two historical initial keys are inherited; condition initialization alone does not reproduce those k=0 states."
+}

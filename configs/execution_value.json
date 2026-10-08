@@ -1,0 +1,19 @@
+{
+  "method": "siren-value",
+  "backbone": "meta-llama/Llama-3.1-8B-Instruct",
+  "seed": 42,
+  "precision": "bfloat16",
+  "layer": 29,
+  "write_site": "MLP down-projection output, last prompt token, one write",
+  "steps": 100,
+  "learning_rate": 0.1,
+  "thought_ce": 1.0,
+  "action_and_eos_ce": 0.5,
+  "norm_coefficient": 0.01,
+  "norm_cap": 160.0,
+  "early_stop_loss": 0.12,
+  "early_stop_min_zero_based_iteration": 11,
+  "gradient_aggregation": "sum over training examples",
+  "max_new_tokens": 96,
+  "note": "Historical full-trace Value recipe. Supply the exact historical fit set to reproduce its recorded results; current execution/train.jsonl belongs to KV training."
+}

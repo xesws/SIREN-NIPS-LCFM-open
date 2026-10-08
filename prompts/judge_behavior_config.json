@@ -1,0 +1,18 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "concurrency": 16,
+  "max_attempts_per_pass": 3,
+  "max_tokens": 512,
+  "model": "deepseek-flash",
+  "model_family": "DeepSeek-V4.1-Flash",
+  "passes": 2,
+  "response_format": {
+    "type": "json_object"
+  },
+  "temperature": 0,
+  "thinking": {
+    "type": "disabled"
+  },
+  "third_on_any_disagreement": true,
+  "truncated_max_tokens": 1024
+}

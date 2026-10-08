@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "anchor_count": 8,
+  "anchor_disagreements": 0,
+  "anchor_positive_matches": 8,
+  "anchor_positive_matches_by_category": {
+    "action": 2,
+    "other_nonpositive": 2,
+    "planning_only": 2,
+    "repetition": 2
+  },
+  "authorization_sha256": "a933148091d4298d66a893a44bd007f200763f428da8c5f6e4d09b76dfa193d4",
+  "basis": "user-authorized practical calibration; minority boundary disagreements accepted",
+  "calibration_count": 64,
+  "calibration_manifest_sha256": "a4276810ccdf51d22d7894aca8a8fbbe6266583106d734cc794ddfd88f2869e0",
+  "calibration_summary_sha256": "d55213e31f9e88d70e850805534cfd751a68adefb43fc76350ccbf2b9cb29ed8",
+  "config_sha256": "b793b7ca5843da34a49302823e7948f3e394132c7e4e8821d05fba04625680df",
+  "evidence_diagnostics_not_label_gate": true,
+  "positive_reference_matches": 54,
+  "practical_policy_sha256": "451d25c05510d39fb5d77a1fa81690650c202f65866d6db696c0e65ad89f53ac",
+  "prompt_sha256": "acf61f9f4a7c65fcfe7abdefff28e45fc9c9b92270e284f5456d301d3f219b3d",
+  "schema_sha256": "79fee66c8fb5e319ae1e66f6c0abc672e822cc39655267a98a75fdc10eeb5e46",
+  "version": "v3"
+}

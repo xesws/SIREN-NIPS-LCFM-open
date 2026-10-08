@@ -1,0 +1,25 @@
+{
+  "evidence": {
+    "cases": 4662,
+    "judge_packets": 2676,
+    "outputs": 2676,
+    "stage_rows": 249
+  },
+  "execution": {
+    "development": 112,
+    "fit": 491,
+    "main": 464,
+    "seed": 90,
+    "validation": 164
+  },
+  "missing_optional_sources": [],
+  "no_model_api_calls": true,
+  "no_training": true,
+  "recognition": {
+    "evaluation": 2390,
+    "fit": 3072
+  },
+  "rules": 82,
+  "schema": "siren-data-export-audit-v1",
+  "source_map_sha256": "5cf82b708ed6d067ce32286056e19940aeba551ab86fad93cee5f55017cbbac5"
+}

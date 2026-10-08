@@ -1,0 +1,9 @@
+Use the selected behavioral guidance to continue the current dialogue. Adapt it to this situation. Examples, when provided, illustrate the guidance.
+Write only the next assistant reply in the current dialogue.
+Do not invent subsequent dialogue turns unless the user explicitly asks for a dialogue example.
+
+Condition: {condition}
+Guidance: {guidance}
+
+Current dialogue:
+{stream}

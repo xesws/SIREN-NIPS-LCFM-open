@@ -1,0 +1,171 @@
+{
+  "descriptive": {
+    "D17": "Output token/sentence-unit length; neither short nor long is automatically good.",
+    "D18": "First aligned planning and first concrete action positions; absent remains absent.",
+    "D19": "Sentence-unit function votes: action/planning/explanation/empathy/meta_response/simulated_dialogue/other.",
+    "D20": "Word overlap with dialogue, rule and original fit actions; descriptive, not evidence of causality or memorization."
+  },
+  "quality": [
+    {
+      "family": "Rule behavior",
+      "id": "D01",
+      "name": "Intent fidelity",
+      "name_zh": "意图忠实度",
+      "question": "Does the response grasp and follow the behavioral intent of the selected rule?",
+      "score0": "Wrong move or merely unrelated cue words.",
+      "score1": "Rule direction is recognizable, including an accurate explicit plan.",
+      "score2": "The intended behavioral move is unambiguous and well targeted."
+    },
+    {
+      "family": "Rule behavior",
+      "id": "D02",
+      "name": "Concrete realization",
+      "name_zh": "行为具体化",
+      "question": "Is the abstract rule grounded in a concrete move for this situation?",
+      "score0": "Generic prescription with no useful connection to the situation.",
+      "score1": "Some relevant concrete grounding, or a sufficiently specific plan.",
+      "score2": "A precise situation-specific question, restatement, distinction or action."
+    },
+    {
+      "family": "Rule behavior",
+      "id": "D03",
+      "name": "Task advancement",
+      "name_zh": "任务推进",
+      "question": "Does this reply move the ongoing task or dialogue one useful step forward?",
+      "score0": "Loops, distracts or contributes no useful next step.",
+      "score1": "Offers a plausible way forward, even without completing the whole task.",
+      "score2": "Makes a clearly useful advancement appropriate to this turn."
+    },
+    {
+      "family": "Rule behavior",
+      "id": "D04",
+      "name": "Proportionate intervention",
+      "name_zh": "干预适量",
+      "question": "Is the scope and force of intervention proportionate?",
+      "score0": "Derails or takes over the task, or adds excessive unrelated demands.",
+      "score1": "Mostly proportionate with a minor scope mismatch.",
+      "score2": "Just the intervention needed, with suitable breadth and intensity."
+    },
+    {
+      "family": "Context fit",
+      "id": "D05",
+      "name": "Latest-turn responsiveness",
+      "name_zh": "当前问题回应",
+      "question": "Does it address what the latest user turn is actually seeking?",
+      "score0": "Ignores or misreads the latest request.",
+      "score1": "Partially addresses it or appropriately redirects under the rule.",
+      "score2": "Directly addresses the current need while respecting the rule."
+    },
+    {
+      "family": "Context fit",
+      "id": "D06",
+      "name": "Use of established information",
+      "name_zh": "已知信息利用",
+      "question": "Does it respect and use information already established in the dialogue?",
+      "score0": "Contradicts established facts or re-asks a clearly answered question without reason.",
+      "score1": "Mostly respects prior information but misses an opportunity to use it.",
+      "score2": "Builds on prior information without unnecessary rechecking."
+    },
+    {
+      "family": "Context fit",
+      "id": "D07",
+      "name": "Referent accuracy",
+      "name_zh": "对象与指代准确",
+      "question": "Are people, terms, objects and their relations identified correctly?",
+      "score0": "Confuses participants, concepts or the object at issue.",
+      "score1": "Understandable referents with a minor ambiguity.",
+      "score2": "Correct and unambiguous objects and relations."
+    },
+    {
+      "family": "Context fit",
+      "id": "D08",
+      "name": "Grounded content",
+      "name_zh": "内容有据",
+      "question": "Does it avoid inventing facts, completed actions or user positions?",
+      "score0": "Makes an unsupported material factual claim or fabricates an outcome.",
+      "score1": "Mostly grounded, with a minor unsupported assumption.",
+      "score2": "Claims are supported or clearly presented as questions, suggestions or uncertainty."
+    },
+    {
+      "family": "Dialogue experience",
+      "id": "D09",
+      "name": "Actual next-turn fit",
+      "name_zh": "下一轮回复感",
+      "question": "Does this read as the actual next assistant response in this dialogue?",
+      "score0": "Mainly tells an outside author how to respond, without functioning as the requested turn.",
+      "score1": "Functions as a response with some distracting narrator framing.",
+      "score2": "Naturally participates in the current dialogue; explanations/plans may be appropriate."
+    },
+    {
+      "family": "Dialogue experience",
+      "id": "D10",
+      "name": "Role stability",
+      "name_zh": "角色稳定",
+      "question": "Does it maintain the proper speaker role?",
+      "score0": "Invents unsolicited user replies or materially confuses who is speaking/acting.",
+      "score1": "Mostly stable role with minor distracting role simulation.",
+      "score2": "Stable appropriate speaker role; a bare Assistant: label is not a defect."
+    },
+    {
+      "family": "Dialogue experience",
+      "id": "D11",
+      "name": "Tone fit",
+      "name_zh": "语气适配",
+      "question": "Is the degree of warmth, directness and formality suited to the exchange?",
+      "score0": "Clearly patronizing, hostile, dismissive or mismatched.",
+      "score1": "Acceptable tone with minor awkwardness.",
+      "score2": "Well-calibrated tone; neither warmth nor brevity is mandatory."
+    },
+    {
+      "family": "Dialogue experience",
+      "id": "D12",
+      "name": "User agency",
+      "name_zh": "尊重用户自主性",
+      "question": "Where user decisions or preferences matter, is their agency respected?",
+      "score0": "Unnecessarily pressures, overrides or invents the user choice.",
+      "score1": "Provides reasonable room for choice with minor overreach.",
+      "score2": "Appropriately invites or respects the user choice. Mark NA jointly if the input has no agency issue."
+    },
+    {
+      "family": "Expression quality",
+      "id": "D13",
+      "name": "Clarity",
+      "name_zh": "清晰度",
+      "question": "Is the wording easy to understand?",
+      "score0": "Materially confusing, incoherent or unclear wording.",
+      "score1": "Understandable despite a minor wording problem.",
+      "score2": "Clear, precise and easy to follow."
+    },
+    {
+      "family": "Expression quality",
+      "id": "D14",
+      "name": "Sufficiency",
+      "name_zh": "信息充分性",
+      "question": "Is enough information provided for this conversational move?",
+      "score0": "Omission makes the response unhelpful or hard to act on.",
+      "score1": "Adequate for the current move, including a useful plan when appropriate.",
+      "score2": "Provides the necessary details without requiring full completion of the broader task."
+    },
+    {
+      "family": "Expression quality",
+      "id": "D15",
+      "name": "Information efficiency",
+      "name_zh": "信息效率",
+      "question": "Does the content serve a useful purpose?",
+      "score0": "Substantial redundant padding, unhelpful repetition or unnecessary explanation.",
+      "score1": "Mostly useful content with some avoidable material.",
+      "score2": "Content is purposeful; necessary explanation, reassurance and examples are efficient too."
+    },
+    {
+      "family": "Expression quality",
+      "id": "D16",
+      "name": "Organization fit",
+      "name_zh": "组织适配",
+      "question": "Does the organization/format support the task?",
+      "score0": "Format or ordering materially obstructs understanding.",
+      "score1": "Usable organization with a minor distraction.",
+      "score2": "Suitable order and format; prose, lists and code can all be appropriate."
+    }
+  ],
+  "version": "E25-expression-v1"
+}

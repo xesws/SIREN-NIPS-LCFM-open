@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siren-rule-memory"
+version = "0.1.0"
+description = "Evidence-coupled rule editing for selective memory use"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+authors = [{name = "Tangyi Qian"}, {name = "Yuan Chang"}]
+dependencies = ["numpy==2.3.3", "scipy==1.16.1", "scikit-learn==1.7.2"]
+
+[project.optional-dependencies]
+model = ["torch==2.8.0", "transformers==4.57.0", "accelerate==1.14.0", "safetensors==0.6.2", "sentence-transformers==5.1.1"]
+report = ["matplotlib==3.10.8"]
+judge = ["httpx==0.27.2"]
+dev = ["pytest==8.3.4"]
+
+[project.urls]
+Repository = "https://github.com/xesws/SIREN-NIPS-LCFM-open"
+Paper = "https://openreview.net/forum?id=RmMFU7QAnn"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
